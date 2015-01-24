@@ -20,5 +20,15 @@
   <%= @item.tax %>
 </p>
 
+<p>
+  <strong>Sum(excluding tax):</strong>
+  <%= @sum_extax %>
+</p>
+
+<p>
+  <strong>Sum(including tax):</strong>
+  <%= @sum_intax %>
+</p>
+
 <%= link_to 'Edit', edit_item_path(@item) %> |
 <%= link_to 'Back', items_path %>

@@ -10,6 +10,8 @@ class ItemsController < ApplicationController
   # GET /items/1
   # GET /items/1.json
   def show
+    @sum_extax = @item.calc_sum
+    @sum_intax = @item.calc_tax
   end
 
   # GET /items/new
